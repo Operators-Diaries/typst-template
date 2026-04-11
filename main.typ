@@ -3,17 +3,18 @@
 #set text(font: "New Computer Modern")
 #set document(title: "LaTeX Template Example", author: "Annhilati")
 #set page(numbering: "1")
+#set heading(numbering: "1.")
 
 #align(center)[
   #text(size: 28pt, weight: "bold")[Mein Titel]
   #v(0em)
-  #text(size: 14pt)[Max Mustermann]
+  #text(size: 14pt)[Annhilati]
   #v(1em)
   #text(10pt)[11. April 2026]
   #v(3em)
 ]
 
-== Abstract
+#heading(level: 2, numbering: none)[Abstract]
 
 Hier steht dein Abstract...
 
@@ -31,4 +32,4 @@ Hier steht dein Abstract...
   ) <fig:SL>
 ]
 
-#bibliography("references.bib")
+#bibliography("references.bib", style: "angewandte-chemie")
