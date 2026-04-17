@@ -8,7 +8,7 @@ Explain the motivation here.
 
 = Objectives
 
-Outline the main objectives of the work. @example_article
+Outline the main objectives of the work. @harry
 
 == Contributions
 

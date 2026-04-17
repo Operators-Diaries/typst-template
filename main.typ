@@ -11,7 +11,7 @@
   #v(0em)
   #text(size: 14pt)[#context document.author.join(", ")]
   #v(1em)
-  #text(10pt)[#context document.date.display("[day]. [month repr:long] [year]")] // https://github.com/typst/typst/issues/1537
+  #text(10pt)[#context document.date.display("[day]. [month repr:long] [year]")]
   #v(3em)
 ]
 
@@ -33,4 +33,4 @@
   ) <fig:SL>
 ]
 
-#bibliography("references.bib", style: "angewandte-chemie")
+#bibliography("references.yaml", style: "angewandte-chemie")
