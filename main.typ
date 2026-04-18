@@ -1,5 +1,3 @@
-#import "@preview/hydra:0.6.2": *
-
 #set document(title: "Typst Template Example", author: ("Annhilati"), date: datetime(day: 11, month: 04, year: 2026))
 #set heading(numbering: "1.")
 #set figure(supplement: [Figur])
