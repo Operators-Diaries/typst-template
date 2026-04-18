@@ -5,9 +5,9 @@
 #set page(numbering: "1")
 
 #align(center)[
-  #text(size: 28pt, weight: "bold")[#context document.title]
+  #text(28pt, weight: "bold")[#context document.title]
   #v(0em)
-  #text(size: 14pt)[#context document.author.join(", ")]
+  #text(14pt)[#context document.author.join(", ")]
   #v(1em)
   #text(10pt)[#context document.date.display("[day]. [month repr:long] [year]")]
   #v(3em)
