@@ -1,8 +1,10 @@
+#import "@preview/molchemist:0.1.1": render-mol
 #set document(title: "Typst Template Example", author: ("Annhilati"), date: datetime(day: 11, month: 04, year: 2026))
 #set heading(numbering: "1.")
 #set figure(supplement: [Figur])
 #set text(font: "New Computer Modern", lang: "de")
 #set page(numbering: "1")
+
 
 #align(center)[
   #text(28pt, weight: "bold")[#context document.title]
@@ -16,6 +18,7 @@
 #heading(level: 1, numbering: none)[Abstract]
 
 #lorem(10) @fig:SL
+#render-mol(read("figures/ethanol.mol"), skeletal: true)
 
 #outline()
 
