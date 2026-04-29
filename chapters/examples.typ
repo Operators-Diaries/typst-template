@@ -20,7 +20,7 @@ $ #ch("2 KMnO4 + 10 FeSO4 + 8 H2SO4 -> K2SO4 + 2 MnSO4 + 5 Fe2(SO4)3 + 8 H2O") $
   caption: [Plot diagram],
 )
 
-= Formeln
+= Writing Shortcuts
 #import "@preview/quick-maths:0.2.1": shorthands
 
 #show: shorthands.with(
@@ -29,9 +29,12 @@ $ #ch("2 KMnO4 + 10 FeSO4 + 8 H2SO4 -> K2SO4 + 2 MnSO4 + 5 Fe2(SO4)3 + 8 H2O") $
   ($<=$, math.arrow.l.double) // Replaces '≤'
 )
 
-$ x^2 = 9 quad <==> quad x = +-3 $
-$ A or B |- A $
-$ x <= y $
+$x = +-3$ can now be written by `"+-"` and $x <= y$ by `"<="` despite it normally rendering as *less or equal than* But the latter is unusable now. See: $#sym.lt.eq$ :(
+
+=== Formattierung per Regex
+
+#show regex("\\d+"): set text(red)
+Numbers like 1 and 10 are automatically colored by a regex.
 
 = Linguistik
 #import "@preview/phonokit:0.5.8": *
@@ -42,5 +45,5 @@ $ x <= y $
 
 #ipa("/DIs \\s Iz \\s @ \\s sEn.t@ns/") // tipa code
 
-#ruby[ðɪs|ɪz|ə|sɛn.|təns][This| is| a| sen|tence]
-// ipa() innerhalb von ruby[] funktioniert nicht
+#ruby("ðɪs|ɪz|ə|sɛn.|təns", "This| is |a| sen|tence")
+// ipa() innerhalb von ruby() funktioniert nicht
