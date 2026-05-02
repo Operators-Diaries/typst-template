@@ -8,7 +8,7 @@
   caption: [Ethanol structure],
 )
 
-$ #ch("2 KMnO4 + 10 FeSO4 + 8 H2SO4 -> K2SO4 + 2 MnSO4 + 5 Fe2(SO4)3 + 8 H2O") $
+#ch("2 KMnO4 + 10 FeSO4 + 8 H2SO4 -> K2SO4 + 2 MnSO4 + 5 Fe2(SO4)3 + 8 H2O")
 
 = Diagramme
 #import "@preview/lilaq:0.6.0" as lq
@@ -24,7 +24,7 @@ $ #ch("2 KMnO4 + 10 FeSO4 + 8 H2SO4 -> K2SO4 + 2 MnSO4 + 5 Fe2(SO4)3 + 8 H2O") $
 #import "@preview/quick-maths:0.2.1": shorthands
 
 #show: shorthands.with(
-  ($+-$, $plus.minus$),
+  ($+-$, math.plus.minus),
   ($|-$, math.tack),
   ($<=$, math.arrow.l.double) // Replaces '≤'
 )
@@ -40,7 +40,7 @@ The word TODO is automatically colored by a regex.
 #import "@preview/phonokit:0.5.8": *
 #import "@preview/rubby:0.10.2": get-ruby
 
-#let ruby = get-ruby(size: 0.6em)
+#let ruby = get-ruby(size: 0.7em)
 
 #ipa("/DIs \\s Iz \\s @ \\s sEn.t@ns/") // tipa code
 

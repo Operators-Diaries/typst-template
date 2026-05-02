@@ -1,4 +1,8 @@
-#set document(title: "Typst Template Example", author: ("Annhilati"), date: datetime(day: 11, month: 04, year: 2026))
+#set document(
+  title: "Typst Template Example",
+  author: ("Annhilati"),
+  date: datetime(day: 11, month: 04, year: 2026)
+)
 #set heading(numbering: "1.")
 #set figure(supplement: [Figur])
 #set text(font: "New Computer Modern", lang: "de")
